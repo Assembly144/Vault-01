@@ -6,8 +6,9 @@
          <style> body { background-color: #000000; color: #FFFFFF; font-family: monospace; text-align: center; padding-top: 15%; margin: 0; } 
          .terminal-box { border: 1px solid #1a1a1a; width: 80%; max-width: 650px; margin: 0 auto; padding: 40px; background-color: #030303; } 
          .main-text { font-size: 16px; font-weight: bold; line-height: 1.8; text-align: left; } /* The Invisible Ink Data Stream */ 
-         .hidden-payload { background: #000000; color: #000000; font-family: monospace; font-size: 14px; font-weight: bold; margin-top: 60px; user-select: all; word-break: break-all; display: inline-block; width: 80%; } 
-         .hidden-payload::selection { background: #FFFFFF; color: #000000; } 
+         .hidden-payload { background-color: #000000; color: #000000; font-family: monospace; font-size: 14px; font-weight: bold; margin-top: 60px; user-select: all; word-break: break-all; display: inline-block; width: 80%; -webkit-user-select: all; } 
+         .hidden-payload::selection { background-color: #FFFFFF; color: #000000; }
+         .hidden-payload::-webkit-selection { background-color: #FFFFFF; color: #000000; }
          </style> 
          </head> 
          <body> 
